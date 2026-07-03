@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ይመዝገቡ፣ ይጋብዙ፣ ይሸለሙ!</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        /* የግብዣ እና የሽልማት ማስታወቂያ ክፍል */
+        .hero-section {
+            text-align: center;
+            padding: 40px 20px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .hero-section h1 {
+            font-size: 2.5rem;
+            color: #ffd700;
+            margin-bottom: 15px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero-section p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+            color: #e0e0e0;
+        }
+
+        /* የሽልማት ሳጥኖች */
+        .rewards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .reward-card {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .reward-icon {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .reward-card h3 {
+            color: #ffd700;
+            margin-bottom: 5px;
+        }
+
+        /* ዋናው የይዘት ክፍል */
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        @media (min-width: 768px) {
+            .main-content {
+                grid-template-columns: 1.2fr 0.8fr;
+            }
+        }
+
+        /* የGoogle Form ማሳያ ሳጥን */
+        .form-box {
+            background: #ffffff;
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        iframe {
+            width: 100%;
+            height: 900px;
+            border: none;
+        }
+
+        /* የመጋበዣ ህጎች ማሳያ */
+        .rules-container {
+            background: rgba(0, 0, 0, 0.4);
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid #ff9f43;
+            height: fit-content;
+        }
+
+        .rules-container h2 {
+            color: #ffd700;
+            margin-bottom: 15px;
+        }
+
+        .rules-container ul {
+            list-style-type: none;
+        }
+
+        .rules-container li {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    
+    <div class="hero-section">
+        <h1>ልዩ የተጠቃሚዎች መጋበዣ ፕሮግራም! 🎉</h1>
+        <p>አሁኑኑ ይመዝገቡ፣ የእርሶን መጋበዣ ሊንክ ለጓደኞችዎ ያጋሩ። ብዙ ሰዎችን በጋበዙ ቁጥር የደረጃውን ትልልቅ ሽልማቶች የመውሰድ ዕድልዎን ያሰፋሉ!</p>
+        
+        <div class="rewards-container">
+            <div class="reward-card">
+                <div class="reward-icon">🎁</div>
+                <h3>ደረጃ 1 (5 ሰው)</h3>
+                <p>የካርድ እና የኢንተርኔት ፓኬጅ ስጦታዎች</p>
+            </div>
+            <div class="reward-card">
+                <div class="reward-icon">📱</div>
+                <h3>ደረጃ 2 (20 ሰው)</h3>
+                <p>ዘመናዊ ስማርት ስልክ (Smartphone)</p>
+            </div>
+            <div class="reward-card">
+                <div class="reward-icon">💻</div>
+                <h3>ደረጃ 3 (50+ )</h3>
+                <p>ላፕቶፕ ወይም ከፍተኛ የገንዘብ ሽልማት</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        
+        <div class="form-box">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc3qT6yOndU4hB2SIn89wR0t1OmsB9CVw5KscG5uQp8A0L36Q/viewform?embedded=true">በመጫን ላይ...</iframe>
+        </div>
+
+        <div class="rules-container">
+            <h2>እንዴት ይሸለማሉ?</h2>
+            <br>
+            <ul>
+                <li><strong>1. ምዝገባ፡</strong> መጀመሪያ በጎን በኩል ያለውን ፎርም በትክክል በመሙላት የዲጂታል ፎቶዎን ጭምር አስገብተው ይመዝገቡ።</li>
+                <li><strong>2. ግብዣ፡</strong> ምዝገባዎን ሲያጠናቅቁ የሚሰጥዎትን መለያ ለጓደኞችዎ በTelegram ወይም WhatsApp ያጋሩ።</li>
+                <li><strong>3. ማረጋገጫ፡</strong> በእርስዎ ግብዣ የገቡ ሰዎች ቁጥር በGoogle ሲስተማችን ተቆጥሮ ህጋዊ ሲሆን ሽልማትዎን ያገኛሉ።</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
